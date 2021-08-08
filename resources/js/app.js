@@ -1,6 +1,3 @@
-// resources/js/app.js
-import 'vite/dynamic-import-polyfill';
+require('./bootstrap');
 
-import '../css/app.css';
-
-import './bootstrap';
+require('alpinejs');
