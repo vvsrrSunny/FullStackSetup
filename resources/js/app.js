@@ -1,1 +1,6 @@
-require('./bootstrap');
+// resources/js/app.js
+import 'vite/dynamic-import-polyfill';
+
+import '../css/app.css';
+
+import './bootstrap';
