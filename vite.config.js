@@ -9,6 +9,9 @@ export default ({ command }) => ({
         },
     },
     plugins: [
+        // for vue
+        vue(),
+        // for blade 
         {
             name: 'blade',
             handleHotUpdate({ file, server }) {
