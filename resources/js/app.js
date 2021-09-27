@@ -1,4 +1,4 @@
-import "vite/dynamic-import-polyfill";
+// import "vite/dynamic-import-polyfill";
 
 import "../css/app.css";
 
@@ -14,9 +14,11 @@ var app = createApp({
         };
     },
 });
-app.component(
-    "UsersPage",
-    defineAsyncComponent(() => import("./components/pages/MyPage.vue"))
-);
 
 // Registering a global component
+app.component(
+    "DashboardPage",
+    defineAsyncComponent(() => import("./components/pages/DashboardPage.vue"))
+);
+
+window.app = app.mount("#app");
