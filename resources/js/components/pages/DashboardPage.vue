@@ -17,11 +17,11 @@
           </div>
           <div class="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
             <button type="button" class="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
-
+                <mail-icon class="-ml-1 mr-2 h-5 w-5 text-gray-400" aria-hidden="true" />
               <span>Message</span>
             </button>
             <button type="button" class="inline-flex justify-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
-
+                <phone-icon class="-ml-1 mr-2 h-5 w-5 text-gray-400" aria-hidden="true" />
               <span>Call</span>
             </button>
           </div>
@@ -37,30 +37,34 @@
 </template>
 
 <script>
-
-const profile = {
-  name: "Ricardo Cooper",
-  email: "ricardo.cooper@example.com",
-  avatar:
-    "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-  backgroundImage:
-    "https://images.unsplash.com/photo-1444628838545-ac4016a5418a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-  fields: [
-    ["Phone", "(555) 123-4567"],
-    ["Email", "ricardocooper@example.com"],
-    ["Title", "Senior Front-End Developer"],
-    ["Team", "Product Development"],
-    ["Location", "San Francisco"],
-    ["Sits", "Oasis, 4th floor"],
-    ["Salary", "$145,000"],
-    ["Birthday", "June 8, 1990"],
-  ],
-};
+import { MailIcon, PhoneIcon } from "@heroicons/vue/solid";
 
 export default {
-  setup() {
+  components: {
+    MailIcon,
+    PhoneIcon,
+  },
+
+  data() {
     return {
-      profile,
+      profile: {
+        name: "Ricardo Cooper",
+        email: "ricardo.cooper@example.com",
+        avatar:
+          "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+        backgroundImage:
+          "https://images.unsplash.com/photo-1444628838545-ac4016a5418a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+        fields: [
+          ["Phone", "(555) 123-4567"],
+          ["Email", "ricardocooper@example.com"],
+          ["Title", "Senior Front-End Developer"],
+          ["Team", "Product Development"],
+          ["Location", "San Francisco"],
+          ["Sits", "Oasis, 4th floor"],
+          ["Salary", "$145,000"],
+          ["Birthday", "June 8, 1990"],
+        ],
+      },
     };
   },
 };
