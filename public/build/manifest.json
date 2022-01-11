@@ -1,7 +1,27 @@
 {
   "resources/js/app.js": {
-    "file": "assets/app.d721603a.js",
+    "file": "assets/app.db968481.js",
     "src": "resources/js/app.js",
-    "isEntry": true
+    "isEntry": true,
+    "imports": [
+      "_vendor.48dea0b0.js"
+    ],
+    "dynamicImports": [
+      "resources/js/components/pages/DashboardPage.vue"
+    ],
+    "css": [
+      "assets/app.a824ff27.css"
+    ]
+  },
+  "_vendor.48dea0b0.js": {
+    "file": "assets/vendor.48dea0b0.js"
+  },
+  "resources/js/components/pages/DashboardPage.vue": {
+    "file": "assets/DashboardPage.0647bde8.js",
+    "src": "resources/js/components/pages/DashboardPage.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor.48dea0b0.js"
+    ]
   }
 }
